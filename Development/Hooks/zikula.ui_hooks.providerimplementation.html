@@ -383,7 +383,7 @@ class UiHooksProviderHandler
 
     public function processEdit(ProcessHook $hook)
     {
-        $this-&gt;requestStack-&gt;getMasterRequest()-&gt;getSession()-&gt;getFlashBag()-&gt;add('success', 'Ui hook properly processed!');
+        $this-&gt;requestStack-&gt;getMainRequest()-&gt;getSession()-&gt;getFlashBag()-&gt;add('success', 'Ui hook properly processed!');
     }
 
     public function filter(FilterHook $hook)
