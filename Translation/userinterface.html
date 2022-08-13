@@ -318,7 +318,7 @@
 <p>Edit in place has some limitations you should be aware of:</p>
 <ul>
 <li>It always works for the current locale only; so in order to update translation for multiple languages you need to switch your site's language.</li>
-<li>It can only work with one single configuration. By default this is set to <code>zikula</code>, so it works for the core. If you want to use it for a module or a theme, you need to put the corresponding configuration name that follows the pattern <code>&lt;vendor&gt;&lt;name&gt;&lt;bundletype&gt;</code> (e.g. <code>zikulastaticcontentmodule</code> or <code>zikulabootstraptheme</code>) into <code>/config/packages/dev/php_translation.yaml</code> at <code>translation.edit_in_place.config_name</code>.</li>
+<li>It can only work with one single configuration. By default this is set to <code>zikula</code>, so it works for the core. If you want to use it for a module or a theme, you need to put the corresponding configuration name that follows the pattern <code>&lt;vendor&gt;&lt;name&gt;&lt;bundletype&gt;</code> (e.g. <code>zikulastaticcontentmodule</code> or <code>zikuladefaulttheme</code>) into <code>/config/packages/dev/php_translation.yaml</code> at <code>translation.edit_in_place.config_name</code>.</li>
 </ul>
 <p>You can utilise HTML formatting options when your translation keys end with the <code>.html</code> suffix (<a href="https://php-translation.readthedocs.io/en/latest/_images/demo-html-editor.png">screenshot</a>).</p>
 <h2 id="web-ui-provides-a-web-interface-to-add-edit-and-remove-translations">Web UI: provides a web interface to add, edit and remove translations</h2>
