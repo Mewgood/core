@@ -251,27 +251,10 @@
                                                             </ul>
                                                     <p class="text-muted">
                                 <a href="#section9" data-toggle="collapse">
-                                    Extensions
-                                </a>
-                            </p>
-                            <ul id="section9" class="nav flex-column collapse">
-                                                                    <li class="nav-item">
-                                        <a href="https://docs.ziku.la/Extensions/content.html" class="nav-link">
-                                            Content
-                                        </a>
-                                    </li>
-                                                                    <li class="nav-item">
-                                        <a href="https://docs.ziku.la/Extensions/other.html" class="nav-link">
-                                            Other
-                                        </a>
-                                    </li>
-                                                            </ul>
-                                                    <p class="text-muted">
-                                <a href="#section10" data-toggle="collapse">
                                     Extension Development
                                 </a>
                             </p>
-                            <ul id="section10" class="nav flex-column collapse">
+                            <ul id="section9" class="nav flex-column collapse">
                                                                     <li class="nav-item">
                                         <a href="https://docs.ziku.la/Development/General/index.html" class="nav-link">
                                             General
@@ -304,11 +287,11 @@
                                     </li>
                                                             </ul>
                                                     <p class="text-muted">
-                                <a href="#section11" data-toggle="collapse">
+                                <a href="#section10" data-toggle="collapse">
                                     Resources
                                 </a>
                             </p>
-                            <ul id="section11" class="nav flex-column collapse">
+                            <ul id="section10" class="nav flex-column collapse">
                                                                     <li class="nav-item">
                                         <a href="https://ziku.la" class="nav-link">
                                             Zikula website
@@ -363,7 +346,7 @@
 <p>Nested instances therefore could make sense if different contexts need to be differentiated for the same data.</p>
 <p>Of course it would also be possible to use multiple different components and/or combinations of components. Again, how a specific extension applies this in its implementation is individual.</p>
 <h3 id="hook-providers">Hook providers</h3>
-<p>Extensions offering <a href="../../Development/Hooks/index.html">hook providers</a> have extended requirements. Because they could want to support different permission schemes depending on the extensions that are connected as hook subscribers. The idea is that it is possible to define permissions for attached comments / reviews / files / etc. based on the objects where these are attached to.</p>
+<p>Extensions offering hook providers have extended requirements. Because they could want to support different permission schemes depending on the extensions that are connected as hook subscribers. The idea is that it is possible to define permissions for attached comments / reviews / files / etc. based on the objects where these are attached to.</p>
 <p>Hence, it makes sense to use the subscriber's name as first level for the instance part.</p>
 <p>The following examples are for a <code>AcmeFileManagerModule</code> that allows to attach uploads and files to other extensions.</p>
 <p>The three instance levels could be used like this:</p>

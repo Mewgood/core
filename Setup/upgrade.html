@@ -251,27 +251,10 @@
                                                             </ul>
                                                     <p class="text-muted">
                                 <a href="#section9" data-toggle="collapse">
-                                    Extensions
-                                </a>
-                            </p>
-                            <ul id="section9" class="nav flex-column collapse">
-                                                                    <li class="nav-item">
-                                        <a href="https://docs.ziku.la/Extensions/content.html" class="nav-link">
-                                            Content
-                                        </a>
-                                    </li>
-                                                                    <li class="nav-item">
-                                        <a href="https://docs.ziku.la/Extensions/other.html" class="nav-link">
-                                            Other
-                                        </a>
-                                    </li>
-                                                            </ul>
-                                                    <p class="text-muted">
-                                <a href="#section10" data-toggle="collapse">
                                     Extension Development
                                 </a>
                             </p>
-                            <ul id="section10" class="nav flex-column collapse">
+                            <ul id="section9" class="nav flex-column collapse">
                                                                     <li class="nav-item">
                                         <a href="https://docs.ziku.la/Development/General/index.html" class="nav-link">
                                             General
@@ -304,11 +287,11 @@
                                     </li>
                                                             </ul>
                                                     <p class="text-muted">
-                                <a href="#section11" data-toggle="collapse">
+                                <a href="#section10" data-toggle="collapse">
                                     Resources
                                 </a>
                             </p>
-                            <ul id="section11" class="nav flex-column collapse">
+                            <ul id="section10" class="nav flex-column collapse">
                                                                     <li class="nav-item">
                                         <a href="https://ziku.la" class="nav-link">
                                             Zikula website
@@ -347,12 +330,6 @@ All the dependencies and requirements are included in this package.</p>
 <h2 id="upgrading">Upgrading</h2>
 <ul>
 <li>Make a note of your 'startpage' settings as they must be cleared in the upgrade process.</li>
-<li>If upgrading from Core-1.x:
-<ul>
-<li>All (1.x.x) blocks using MenuTree, ExtMenu or Menu will be DELETED during the upgrade as these are no longer available.
-You should consider deleting and replacing these with a MenuModule block before upgrading.</li>
-<li>All (1.x.x) Hook connections will be deleted and need to be re-connected post-upgrade.</li>
-</ul></li>
 <li>Before uploading the new files, delete (or move) <strong>all files</strong> in your web root (typically <code>public_html</code> or <code>httpdocs</code>).</li>
 <li>Upload the new package and unpack the archive.
 <ul>

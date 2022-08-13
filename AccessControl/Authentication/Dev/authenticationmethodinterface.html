@@ -251,27 +251,10 @@
                                                             </ul>
                                                     <p class="text-muted">
                                 <a href="#section9" data-toggle="collapse">
-                                    Extensions
-                                </a>
-                            </p>
-                            <ul id="section9" class="nav flex-column collapse">
-                                                                    <li class="nav-item">
-                                        <a href="https://docs.ziku.la/Extensions/content.html" class="nav-link">
-                                            Content
-                                        </a>
-                                    </li>
-                                                                    <li class="nav-item">
-                                        <a href="https://docs.ziku.la/Extensions/other.html" class="nav-link">
-                                            Other
-                                        </a>
-                                    </li>
-                                                            </ul>
-                                                    <p class="text-muted">
-                                <a href="#section10" data-toggle="collapse">
                                     Extension Development
                                 </a>
                             </p>
-                            <ul id="section10" class="nav flex-column collapse">
+                            <ul id="section9" class="nav flex-column collapse">
                                                                     <li class="nav-item">
                                         <a href="https://docs.ziku.la/Development/General/index.html" class="nav-link">
                                             General
@@ -304,11 +287,11 @@
                                     </li>
                                                             </ul>
                                                     <p class="text-muted">
-                                <a href="#section11" data-toggle="collapse">
+                                <a href="#section10" data-toggle="collapse">
                                     Resources
                                 </a>
                             </p>
-                            <ul id="section11" class="nav flex-column collapse">
+                            <ul id="section10" class="nav flex-column collapse">
                                                                     <li class="nav-item">
                                         <a href="https://ziku.la" class="nav-link">
                                             Zikula website
@@ -365,8 +348,8 @@ properties it manages, e.g. uname, email, password, etc).</p>
 interface) of said user. This is because UserModule will take appropriate steps to not orphan data and will fire the
 required events, et al on user deletion. The providing authenticationMethod should react to said events in managing
 their own data.</p>
-<h2 id="hooks-and-events-in-templates">Hooks and events in templates</h2>
-<p>Authentication modules <em>must</em> implement hooks and events within their login and registration templates.
+<h2 id="events-in-templates">Events in templates</h2>
+<p>Authentication modules <em>must</em> implement events within their login and registration templates.
 See <a href="https://github.com/zikula/core/tree/master/src/system/ZAuthModule/">ZAuthModule</a> for examples:</p>
 <ul>
 <li><code>src/system/ZAuthModule/Resources/views/Authentication/register.html.twig</code></li>
@@ -374,7 +357,6 @@ See <a href="https://github.com/zikula/core/tree/master/src/system/ZAuthModule/"
 </ul>
 <p>Also see:</p>
 <ul>
-<li><code>\Zikula\UsersModule\Container\HookContainer</code></li>
 <li><code>\Zikula\UsersModule\RegistrationEvents</code></li>
 </ul>
 <h2 id="installation-and-discoverability">Installation and discoverability</h2>
